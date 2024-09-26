@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0 10px;
+    gap: 20px;
+    background-color: #002752;
+}
+
+
+/* Countdown Box */
+
+.countdown-container {
+    background-color: #e8f0ff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.countdown-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004085;
+}
+
+.countdown-display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004085;
+    margin: 20px 0;
+}
+
+.input-time {
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 1rem;
+    width: 80px;
+    border: 1px solid #a0c4ff;
+    border-radius: 10px;
+}
+
+.countdown-buttons .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #004085;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.countdown-buttons .btn:hover {
+    background-color: #002752;
+}
+
+
+/* Counter Box */
+
+.counter-container {
+    background-color: #e0ffe8;
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.counter-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004d1a;
+}
+
+.counter-display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004d1a;
+    margin: 20px 0;
+}
+
+.counter-buttons .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #004d1a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.counter-buttons .btn:hover {
+    background-color: #00380f;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .countdown-container,
+    .counter-container {
+        width: 90%;
+    }
+}
